@@ -510,7 +510,7 @@ con.connect((err) => {
     }
     console.log("Подключение к базе данных — успешно");
 });
-const port = 3306;
+const port = 3000;
 app.listen(port, () => {
     console.log(`Сервер запущен: http://localhost:${port}`);
 });

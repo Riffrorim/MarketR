@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Название</title>
+    <link href="product-details.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <section class = "head">
+        <p>
+            Интернет магазин
+        </p>
+        <div class = "input-container">
+        <input id="searchInput" placeholder="Поиск товаров..." class = "searchInput">
+        <button id="searchBtn" class = "searchBtn">
+            Поиск
+        </button>
+        </div>
+    </section>
+    <section class = "taskbar" id = "taskbar">
+        <div class = "user-container" onclick = "window.location.href='profile.html'">
+        <img src = "profile.png" class = "profileImg">
+        <div class = "name-container">
+            <p id = "name">
+            </p>
+        </div>
+        </div>
+        <div class = "button">
+            <button onclick="window.location.href='/'" class = "back">
+                Вернуться на главную
+            </button>
+        </div>
+    </section>
+    <section class = "guest">
+        <div class = "user-container">
+        <img src = "profile.png" class = "profileImg">
+        <div class = "name-container">
+            <p>
+                Гость
+            </p>
+        </div>
+        </div>
+        <div class = "button">
+            <button onclick="window.location.href='/'" class = "back">
+                Вернуться на главную
+            </button>
+        </div>
+    </section>
+</header>
+<main>
+    <div class = "information">
+    <div class = "infoTitle-container">
+    <div class = "infoTitle-block">
+        <p id = "infoTitle" class = "infoTitle">
+            Сведения о товаре
+        </p>
+    </div>
+    </div>
+    <div class = "productTitle-container">
+    <div class = "productTitle-block">
+        <p class = "productTag">
+            Название товара
+        </p>
+        <p id="productTitle" class = "productTitle">
+            Название товара
+        </p>
+    </div>
+    </div>
+    <div class = description-container>
+    <div class = "description-block">
+        <p class = "titleDescription">
+            Описание
+        </p>
+        <p id="productDescription" class = "productDescription">
+            Описание товара
+        </p>
+    </div>
+    </div>
+    <div class = "img-product-container">
+    <div id="productImages" class = "img-product-block">
+    </div>
+    </div>
+    <div class = "productPrice-container">
+    <div class = "productPrice-block">
+        <p id="productPrice" class = "productPrice">
+            Цена
+        </p>
+    </div>
+    </div>
+    <div class = "buy-container">
+    <div class = "buy-block">
+        <button id = "buy" class = "buy">
+            Купить
+        </button>
+        <img src = "addPhoto.png" style = "display: none;" id = "soldImg" class = "soldImg">
+        <p id = "soldText" style = "display: none;" class = "soldText">
+            Продано
+        </p>
+    </div>
+    </div>
+    <div class = "container-user">
+    <div class = "user-block">
+        <p class = "fromUser">
+            От пользователя:
+        </p>
+        <p id = "user" class = "nameUser">
+            Имя пользователя
+        </p>
+    </div>
+    </div>
+</main>
+<div class="messageSystem">
+    <div class="messageSystem-container">
+        <img src="good.png" id="good" class="good">
+        <img src="bad.png" id="bad" class="bad">
+        <p class="message" id="message">
+            Сообщение о проблеме или о хорошем исходе
+        </p>
+    </div>
+</div>
+    <script src="auth.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>

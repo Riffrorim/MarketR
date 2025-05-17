@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Название</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <section class = "head">
+        <p>
+            Интернет магазин
+        </p>
+        <div class = "input-container">
+        <input id="searchInput" placeholder="Поиск товаров..." class = "searchInput">
+        <button id="searchBtn" class = "searchBtn">
+            Поиск
+        </button>
+        </div>
+    </section>
+    <section class = "taskbar" id = "taskbar">
+        <div class = "user-container" onclick = "window.location.href='profile.html'">
+        <img src = "profile.png" class = "profileImg">
+        <div class = "name-container">
+            <p id = "name">
+            </p>
+        </div>
+        </div>
+        <div class = "button">
+            <button id = "addProduct" class = "addProduct">
+                Добавить товар
+            </button>
+        </div>
+    </section>
+    <section class = "guest">
+        <div class = "user-container">
+        <img src = "profile.png" class = "profileImg">
+        <div class = "name-container">
+            <p>
+                Гость
+            </p>
+        </div>
+        </div>
+        <div class = "button">
+            <button id = "LogInBtn" class = "LogInBtn">
+                Войти
+            </button>
+        </div>
+    </section>
+</header>
+<main>
+    <section class = "product-container" id = "product-container">
+        <p id = "no-results" class = "no-results">
+            Товары не найдены
+        </p>
+    </section>
+    
+    <section class = "add-product-container" id = "add-product-container">
+        <div>
+            <p class = "infoTitle">
+                Информация о товаре
+            </p>
+        </div>
+        <div class = "infoInputBlock">
+            <p class = "inputTag">
+                Название товара:
+            </p>
+            <input id = "name-product" placeholder="Название товара..." class="inputProductData">
+            <p class = "inputTag">
+                Описание товара:
+            </p>
+            <textarea id = "description" class = "descriptionInput" placeholder="Описание товара..."></textarea>
+            <p class = "inputTag">
+                Цена в рублях:
+            </p>
+            <input id = "price" placeholder = "Цена в рублях..." class = "inputProductData">
+        </div>
+        <div>
+            <button id = "addPhotoBtn" class = "addPhotoBtn">
+                Добавить фотографию товара
+            </button>
+            <input type="file" accept="image/*" id="fotoInput" class="fotoInput" multiple style="display: none;" name="photos">
+        </div>
+        <div class = "add-img-product-container" id = "imagePreviewContainer">
+            <img src = "addProducts.png" class = "imgAdd" id = "addPhotoImg">
+        </div>
+        <div class = "complete-container">
+            <button id = "complete" class = "complete">
+                Завершить
+            </button>
+        </div>
+    </section>
+    
+    <div class="modal-overlay" id="modal-overlay">
+    <section class="modal-window" id="registr-modal-window">
+        <div class="modal-content">
+            <div class = "lever" id = "lever">
+                <button id = "showRegistr" class = "showRegistr">
+                    Регистрация
+                </button>
+                <button id = "showLogin" class = "showLogin">
+                    Вход
+                </button>
+            </div>
+            <div>
+                <p class = "inputName">
+                    Введите имя пользователя:
+                </p>
+                <input id = 'inputNameReg' class = "input" maxlength="30">
+                <p class = "inputPassword" maxlength = "20">
+                    Введите пароль:
+                </p>
+                <input id = 'inputPasswordReg' class = "input">
+            </div>
+            <div>
+                <button id = "reg" class = "reg">
+                    Зарегистрироваться
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="modal-window" id="logIn-modal-window">
+        <div class="modal-content">
+            <div class = "lever" id = "lever">
+                <button id = "showRegistr" class = "showRegistr">
+                    Регистрация
+                </button>
+                <button class = "showLogin">
+                    Вход
+                </button>
+            </div>
+            <div>
+                <p class = "inputName">
+                    Введите имя пользователя:
+                </p>
+                <input id = 'inputNameLogin' class = "input" maxlength="30">
+                <p class = "inputPassword">
+                    Введите пароль:
+                </p>
+                <input id = 'inputPasswordLogin' class = "input" maxlength="20">
+            </div>
+            <div>
+                <button id = "logInButton" class = "logInButton">
+                    Войти
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+<div class="messageSystem">
+    <div class="messageSystem-container">
+        <img src="good.png" id="good" class="good">
+        <img src="bad.png" id="bad" class="bad">
+        <p class="message" id="message">
+            Сообщение о проблеме или о хорошем исходе
+        </p>
+    </div>
+</div>
+    <script src = "auth.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>

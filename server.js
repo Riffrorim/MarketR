@@ -15,11 +15,13 @@ app.get('/addProduct.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'addProduct.html'));
 });
 const con = mysql.createConnection({
-    host: process.env.MYSQLHOST,
-    user: process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQLDATABASE,
-    port: process.env.MYSQLPORT
+  host: process.env.MYSQLHOST,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
+  port: process.env.MYSQLPORT,
+  ssl: { rejectUnauthorized: false },
+  connectTimeout: 10000 
 });
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 //Передача изображения в папку uploads

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Профиль</title>
+    <link href="profile.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <section class="head">
+        <p>
+            Интернет магазин
+        </p>
+        <button onclick="window.location.href='/'" class = "back">
+            Вернуться на главную
+        </button>
+    </section>
+</header>
+<main>
+    <section>
+    <div class = "taskbar">
+        <div class = "user-container" onclick = "window.location.href='profile.html'">
+        <img src = "profile.png" class = "profileImg">
+        <div class = "name-container">
+            <p id = "name">
+            </p>
+        </div>
+        </div>
+        <div class = "button">
+            <button id = "change-name" class = "change-name">
+                Изменить
+            </button>
+            <button id = "exit" class = "exit">
+                Выйти
+            </button>
+        </div>
+    </div>
+    </section>
+    <div class = "options">
+    <section class = "cash-container">
+        <div>
+            <p id = "cash" class = "cash">
+                Кошелёк: 0
+            </p>
+        </div>
+        <div>
+            <button class = "open-refill" id = "open-refill">
+                Пополнить
+            </button>
+        </div>
+    </section>
+    <section class = "refill-container" id = "refill-container">
+        <div>
+            <p class = "quantity">
+                Количество:
+            </p>
+            <input id = "input-cash" class = "input-cash">
+        </div>
+        <div>
+            <button class = "refill">
+                Пополнить
+            </button>
+        </div>
+    </section>
+    <section class="statistics-block">
+        <div class = "name-statistics-container">
+            <p class = "name-statistics">
+                Статистика:
+            </p>
+        </div>
+<div class="statistics">
+    <div class="item-statistics">
+        <p id="added-products-count">
+            Добавленные товары: 0
+        </p>
+    </div>
+    <div class="item-statistics">
+        <p id="sold-products-count">
+            Проданные товары: 0
+        </p>
+    </div>
+    <div class="item-statistics">
+        <p id="purchased-products-count">
+            Приобретённые товары: 0
+        </p>
+    </div>
+</div>
+    </section>
+    <section>
+        <div>
+            <p class = "purchaseProduct">
+                Купленные товары
+            </p>
+        </div>
+        <div class = "purchase-container" id = "purchase-container">
+            <div class = "purchase" id = "purchase">
+                
+            </div>
+        </div>
+    </section>
+<section>
+    <div>
+        <p class="purchaseProduct">
+            Мои проданные товары
+        </p>
+    </div>
+    <div class="sold-products-container" id="sold-products-container">
+    </div>
+</section>
+<section>
+    <p class = "title-my-products">
+        Мои товары
+    </p>
+    <div class = "my-products-container">
+        <div class = "my-products">
+            <p class = "title">
+                Название товара
+            </p>
+            <div class = "buttons-container">
+                <div class = "delete" id = "delete">
+                    Удалить
+                </div>
+                <div>
+                    Посмотреть
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal-overlay" id="modal-overlay">
+    <div class="change-name-block" id="change-name-block">
+        <p class = "titleFirstName">
+            Изначальное имя пользователя:
+        </p>
+        <p id="current-username" class = "current-username">
+            Имя пользователя
+        </p>
+        <div>
+            <p class = "new-name">
+                Новое имя:
+            </p>
+            <input id="new-username-input" class = "new-username-input">
+        </div>
+        <button id="change" class = "change">
+            Сменить
+        </button>
+    </div>
+</div>
+</main>
+<div class="messageSystem">
+    <div class="messageSystem-container">
+        <img src="good.png" id="good" class="good">
+        <img src="bad.png" id="bad" class="bad">
+        <p class="message" id="message">
+            Сообщение о проблеме или о хорошем исходе
+        </p>
+    </div>
+</div>
+<script src="auth.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

@@ -2,6 +2,10 @@ html, body{
     padding: 0;
     margin: 0;
     width: 100%;
+    overlow-x: hidden;
+}
+*{
+    box-sizing: border-box;
 }
 header{
     width: 100%;

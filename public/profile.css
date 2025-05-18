@@ -2,7 +2,6 @@ html, body{
     padding: 0;
     margin: 0;
     width: 100%;
-    overlow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -228,7 +227,6 @@ header{
 }
 .item-statistics{
     color: #3E4A58;
-    margin-left: 8px;
     font-size: 15px;
 }
 .purchaseProduct{

@@ -350,8 +350,6 @@ header{
 .sold-products-container,
 .purchase-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .my-products-container{
     display: flex;

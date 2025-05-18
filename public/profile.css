@@ -236,8 +236,6 @@ header{
     white-space: nowrap;
     overflow-x: auto;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
     gap: 10px;
     scrollbar-width: none;
 }
@@ -301,8 +299,6 @@ header{
     white-space: nowrap;
     overflow-x: auto;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
     gap: 10px;
     scrollbar-width: none;
 }
@@ -357,8 +353,6 @@ header{
     white-space: nowrap;
     overflow-x: auto;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
     gap: 10px;
     scrollbar-width: none;
 }

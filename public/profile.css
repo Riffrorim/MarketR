@@ -20,9 +20,6 @@ header{
     padding: 5px;
     box-sizing: border-box;
 }
-main{
-    margin-top: 5px;
-}
 .back{
     background-color: #2C92FF;
     border: none;

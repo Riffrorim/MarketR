@@ -363,15 +363,21 @@ header{
     scrollbar-width: none;
 }
 .product{
-    color: white;
+    flex: 0 0 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    gap: 10px;
 }
 .delete{
     background-color: red;
     border: none;
     color: white;
-    border: 5px solid #2C92FF;
+    border: 5px solid red;
     border-radius: 7px;
 }
 .title-my-products{
